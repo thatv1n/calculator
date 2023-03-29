@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+* {
+	box-sizing: border-box;
+	transition: all 0.15s ease-in-out;
+	user-select: none;
+}
+
+.App {
+	display: grid;
+	place-items: center;
+	place-content: center;
+	height: 100vh;
+}
+
+.content {
+	display: flex;
+	gap: 56px;
+}
+
+.wrapper-item {
+	background: #ffffff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.06), 0px 4px 6px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	padding: 4px;
+	box-sizing: border-box;
+	margin-bottom: 12px;
+}
+
+.line::before {
+	content: '';
+	position: absolute;
+	bottom: -16px;
+	width: 251px;
+	height: 7px;
+	left: -8px;
+	background-image: url('./assets/icons/line.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto;
+	transition: all 0.3s ease-in-out;
+}
